@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mobile-container {
+            max-width: 400px;
+            margin: auto;
+            height: 5000px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: transparent;
+            position: relative;
+            background-color: #5d5d5d;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav #about {
+            text-align: center;
+            display: none;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 30px;
+
+        }
+
+        .topnav a {
+            color: white;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            background: rgb(27, 26, 26);
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 15px;
+        }
+
+        .topnav a:hover {
+            color: rgb(19, 18, 18);
+        }
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Jovens Empreendedores</title>
+
+
+<body>
+    <div class="fade-in">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Top Navigation Menu -->
+
+    <div class="topnav">
+        <a href="#home" class="active"> <img src="img/logo3.png" alt="" width="170px" height="65px"></a>
+        <div id="myLinks">
+            <a href="#about" onclick="about()">Quem somos?</a>
+            <a>Nos acompanhe no Instagram:</a>
+            <a href="https://www.instagram.com/jov_empreendedores_ofc/"> <img src="img/instagram (1).png" alt="icon insta" width="30px" height="30px"></a>
+            <p id="about">A Jovens Empreendedores <br> 
+            tem como <strong> missão</strong> transmitir educação financeira para todos,
+            capacitando-os a desenvolver habilidades financeiras essenciais. <br> 
+            <strong>Buscamos<strong> ser referência na disseminação desse conhecimento, promovendo inclusão, respeito à diversidade e excelência em nossos recursos educacionais. <br>
+            Nossa <strong>visão<strong> é contribuir para uma sociedade consciente e financeiramente saudável, oferecendo oportunidades iguais de acesso à educação financeira.</p>
+
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- End smartphone / tablet look -->
+    </div>
+
+    <header id="event-description">
+        <div id="disclaimer">
+
+            <h2 id="Title">
+                Jovens Empreendedores</h2>
+
+            <h3>Educação Financeira para Todos</h3>
+            <p class="about-event">
+                Não importa qual seja o tamanho do seu sonho, aprender a organizar o seu dinheiro é o primeiro passo
+                para realizá-lo.
+            </p>
+            <p id="informacoes1">Sobre:</p>
+            <p id="informacoes2">Empresa sem fins lucrativos que conta com apoio de ONGs apoiadoras</p>
+        </div>
+
+        <div id="subscription-form">
+            <p> <br> Preencha com seus <br> dados para receber detalhes nos <br> seus principais <br> meios de
+                comunicação </p>
+            <form>
+
+                <button class="bottom"> 
+                <a href="page2.html" class="bottom"> 
+                    Quero Aprender!
+                </a></button>
+            </form>
+        </div>
+    </header>
+    <section id="key-benefits">
+        <h2>O que te ensinaremos:</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img">
+                </div>
+
+                <p>
+                    <li>A importância de investir em educação financeira;</li>
+                    <li>Quebra de paradigmas ao falar sobre dinheiro;</li>
+                    <li>Como criar consciência sobre o que gasta;</li>
+                    <li>Reduza custos desnecessários;</li>
+                </p>
+            </div>
+
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>
+                    <li>Estabeleça metas financeiras;</li>
+                    <li>Separe finanças pessoais e do negócio;</li>
+                    <li> O que é Reserva de Emergência e por que a necessidade de ter uma agora?;</li>
+                    <li>Organize seus gastos em uma planilha;</li>
+                    <li>A Regra do Ovo: Como Se organizar para ter 30% de sua renda sobrando?;</li>
+                </p>
+            </div>
+
+
+
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>
+                    <li>Como ganhar mais? Diversifique suas fontes de renda;</li>
+                    <li>Introdução a investimento;</li>
+                    <li>Renda Fixa;</li>
+                    <li>Por que a Poupança faz eu perder dinheiro?;</li>
+                    <li>Conceito de taxas simples de juros;</li>
+                    <li>Renda Variável e o Mercado de Ações;</li>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="text">
+            <h2>Mas o que é Educação Financeira?</h2>
+            <p>Assista ao vídeo ao lado!</p>
+        </div>
+
+        <div class="class">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HzRK6wTSHHU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="location">
+        <div id="adress">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="addres-detail">
+                <p>Rua do local</p>
+                <p>bairro do local</p>
+                <p>Horário de Funcionamento</p>
+            </div>
+
+        </div>
+        <div id="about-location">
+            <h3>Nome da ONG patrocinadora</h3>
+            <p>
+                Informações adicionais
+            </p>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="detail" id="detail-1">
+            <img src="img/interrogacao_img.jpg" alt="imagem do trabalho">
+            <div class="detail-description">
+                <h3>Mas o que a Educação Financeira Ajuda na sua Vida?</h3>
+            </div>
+        </div>
+
+        <div class="detail" id="detail-2">
+            <div class="detail-description">
+                <!--<h3>Detalhes</h3>-->
+                <ul>
+                    <li>Gestão eficiente do dinheiro;</li>
+                    <li>Tomada de decisões informadas;</li>
+                    <li>Controle sobre a dívida;</li>
+                    <li>Construção de patrimônio;</li>
+                    <li>Melhoria na capacidade de lidar com emergências financeiras;</li>
+                </ul>
+            </div>
+            <img src="img/planilha_organizacao.jpg" alt="">
+
+        </div>
+
+        <div class="detail" id="detail-3 ">
+            <img src="img/homem_feliz.jpg" alt="">
+            <div class="detail-description">
+                <!--<h3>Outros</h3>-->
+                <ul>
+                    <li>Redução do estresse financeiro;</li>
+                    <li>Planejamento para o futuro;</li>
+                    <li>Aumento da segurança financeira</li>
+                    <li>Desenvolvimento de uma mentalidade de prosperidade;</li>
+                    <li>Estilo de vida mais leve;</li>
+                    <li style="font-weight: bolder;">E muito mais...</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="cta">
+        <h3>Gostou? Venha conhecer nosso trabalho:</h3>
+        <button class="bottom"> <a href="page2.html" class="bottom">Preencher formulário</a> </button>
+    </section>
+    <footer id="footer">
+        <h3>Jovens Empreendedores</h3>
+        <p> Não importa qual seja o tamanho do seu sonho, aprender a organizar o seu dinheiro é o primeiro passo para
+            realizá-lo. <br> Conte com os Jovens Empreendedores para te ajudar nessa jornada rumo ao sucesso financeiro!
+        </p>
+        <p><span>Entre em contato:</span> financeir2@jovensemp.com.br</p>
+        <p><span>Ou pelo telefone:</span> (55) 31 99990-9999</p>
+
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+</div>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    function about() {
+        let about = document.getElementById('about')
+        if (about.style.display === 'block') {
+            about.style.display = 'none'
+        } else {
+            about.style.display = 'block'
+        }
+
+    }
+</script>
+<script src="script/script.js"></script>
+
+</body>
+
+</html>

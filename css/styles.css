@@ -1,0 +1,468 @@
+.fade-in {
+    opacity: 0; /* Inicia com opacidade 0 (invisível) */
+    animation: fadeIn 1s ease-in forwards; /* Aplica a animação de fade-in */
+  }
+
+
+:root{
+    --primary: deepskyblue;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secundary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+*{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/*Event form - Estilos para o Formulário*/
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/money.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+  background-position: center;
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);    
+}
+
+#disclaimer h2, #disclaimer h3,
+#disclaimer .event-description,
+#disclaimer .informacoes, h1 {
+    color: var(--primary);
+} 
+
+#disclaimer h2 {
+font-size: 35px;
+margin-left: 400px;
+font-weight: bold;
+padding: 3rem;
+
+}
+
+#disclaimer h3{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 3em;
+}
+
+#disclaimer .about-event {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 3em;    
+    margin-left: 40px ;
+}
+
+#informacoes1 {
+    font-size: 1em;
+    margin-bottom: auto;
+    font-weight: bold;
+    margin-left: 40px;
+
+}
+
+#informacoes2{
+    padding: 1rem;
+    color: deepskyblue;
+    margin-left: 40px;
+}
+
+
+.form1  {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    font-weight: bold;   
+    max-width: 35%;
+    margin-top: 60px;
+    margin-left: 480px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+
+#subscription-form p {
+    font-size: 1.2rem;
+    color: var(--text-secundary);
+    margin-bottom: 1.5em; 
+    color: white;
+    
+}
+.form-group {
+margin-left: 70px;    
+display: flex;
+text-align: center;
+flex-direction: column;
+margin-bottom: 1em;
+width: 300px;
+height: 80px;
+color: white;
+}
+
+.form-group label {
+font-size: 1.2rem;
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em; 
+  font-weight: bold;
+  color: white; 
+}
+
+.form-group input, .form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.bottom {
+ background-color: var(--primary);
+ color: #fff; 
+ font-weight: bolder;
+ text-transform: uppercase;
+ width: 100%;  
+ padding: 12px;
+ cursor: pointer;
+ 
+}
+
+.bottom:hover{
+    opacity: 1;
+}
+
+#key-benefits h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+
+.benefits {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+    width: 100%;    
+    margin: 0 auto;
+    
+    
+}
+
+.benefit{
+    background-color: #b1a7a7;
+    display: flex;
+    border-radius: 1em;
+    background-size: 5em;
+    text-align: left;
+    flex-direction: column;
+    max-width: 30%;
+    font-weight: bold;
+    padding: 3em;
+    line-height: 25px;
+}
+
+.benefit .benefit-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 1.2em;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1.0em;  
+    margin: 0 auto;
+    
+}
+
+#benefit-1 {
+   background-image: url(../img/economy.png) ; 
+   
+   
+}
+
+#benefit-2 {
+    background-image: url(../img/color_table.png) ; 
+ }
+
+ #benefit-3 {
+    background-image: url(../img/profits.png) ; 
+ }
+
+ #video {
+    
+    height: 85vh; 
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .text{
+    background: var(--secondary);
+    border-style:ridge ;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: 800;
+    padding: 3em;
+    
+ }
+ 
+
+ #video p {
+    font-size: larger;
+    font-weight: bold;
+    padding: .5em;
+    
+ }
+
+ /* Event Location*/
+ #location{
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/location.jpg");
+   background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+ }
+ 
+ #adress, #about-location  {
+   max-width: 30%;
+  
+ }
+ #adress{
+    display: flexf;
+ }
+ 
+
+
+ #location i{
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.5em;
+ }
+ 
+ #adress-detail{
+    text-align: center;
+    font-size: 1.3em;
+ }
+
+#about-location h3 {
+    color: var(--primary);
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    
+}
+
+
+/*Detail*/
+#details{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img{
+    width: 50%;
+
+}
+.detail h3{
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+#detail-1 h3{
+    font-size: 3em;   
+    font-weight: 700;   
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+    line-height: 45px;
+}
+.detail-description ul {
+   list-style-position: inside; 
+}
+.detail-description ul li {
+    margin-bottom: 0.4;
+}
+
+a{
+    text-decoration: none;
+  }
+
+#cta{
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/money_background.jpg");
+   background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em ;
+    font-weight: 800;
+}
+
+#cta .bottom{
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: auto;
+}
+
+#footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondary);
+    bottom: 0;  
+    height: 250px;
+}
+
+#footer h3{
+    border-color: var(--primary);
+    border-width: 5%;
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2){
+    font-size:1.2em;
+    margin-bottom: 1em;
+    font-weight: bolder;
+}
+
+/*MOOOOOOOBILE*/
+@media(max-width: 450px){
+    #event-description {
+        flex-direction:column;
+        height: auto;
+    }
+
+    #disclaimer{
+        padding: 2em;
+    }
+    #disclaimer h2{
+        margin-bottom: .5em;
+    }
+
+    #subscription-form{
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+    /*benefits section*/
+    .benefits{
+      flex-direction: column;  
+      align-items: center;
+      width: auto;
+      padding: 2em;
+
+    }
+    .benefit{
+        max-width: 100%;
+        margin-bottom: 2em;
+      }
+
+      /*Evento Location*/
+      #location{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+      }
+
+      #address{
+        order: 2;
+        flex-direction: 100%;
+      }
+      #address i {
+        margin: .3em 0;
+      }
+      #about-location{
+        order: 1;
+        max-width: 100%;
+      }
+      
+      #video{
+           flex-direction: column;
+            height: auto;
+            text-align: center;   
+          }
+      
+      .text {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+      }
+
+      #about-location h3{
+       margin-bottom: 0;
+      }
+
+      #about-location p{
+        display:none;
+      }
+
+      /*Event details container*/
+      .detail{
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap:0;
+      }
+      .detail img{
+        width: 100%;
+        margin: 2em 0;
+      } 
+
+      #detail-1 img {
+        display: none;
+      }
+      .detail-description{
+        padding: 0%;
+      }
+
+      #detail-3 img{
+        order: 2;
+      }
+      #detail-3 .detail-description{
+        order: 1;
+      }
+}
