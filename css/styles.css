@@ -3,6 +3,7 @@
     animation: fadeIn 1s ease-in forwards; /* Aplica a animação de fade-in */
   }
 
+  
 
 :root{
     --primary: deepskyblue;
@@ -23,6 +24,9 @@ body {
     box-sizing: border-box;
 }
 
+.gratuito{
+  color: deepskyblue;
+}
 
 /*Event form - Estilos para o Formulário*/
 #event-description {
@@ -95,6 +99,25 @@ padding: 3rem;
 }
 
 
+#menu{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-top: 25px;
+ color: #fff;
+ background-color: rgb(42, 202, 255);
+ border-radius: 1em;
+ width: 15%;
+ height: 30px;
+ text-align: center;
+ padding: 5px;
+}
+
+#menu:hover{
+  color: black;
+  font-weight: bold;
+}
+
 #subscription-form p {
     font-size: 1.2rem;
     color: var(--text-secundary);
@@ -107,7 +130,7 @@ margin-left: 70px;
 display: flex;
 text-align: center;
 flex-direction: column;
-margin-bottom: 1em;
+margin-bottom: 50px;
 width: 300px;
 height: 80px;
 color: white;
@@ -140,7 +163,8 @@ font-size: 1.2rem;
 }
 
 .bottom:hover{
-    opacity: 1;
+    color: #000;
+    font-weight: bold;
 }
 
 #key-benefits h2 {
@@ -229,7 +253,7 @@ font-size: 1.2rem;
 
  /* Event Location*/
  #location{
-    height: 400px;
+    height: 300px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/location.jpg");
    background-position: center;
@@ -440,6 +464,19 @@ a{
       #about-location p{
         display:none;
       }
+
+      .about{
+        display: none;
+      }
+      
+      #about {
+        text-align: center;
+        display: none;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 30px;
+
+    }
 
       /*Event details container*/
       .detail{
