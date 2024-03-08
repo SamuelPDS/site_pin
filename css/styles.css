@@ -13,9 +13,6 @@
     --text-tertiary: #5d5d5d;
 }
 
-body {
-    padding-bottom: 500px;
-}
 
 *{
     font-family: 'Montserrat';
@@ -28,26 +25,39 @@ body {
   color: deepskyblue;
 }
 
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 /*Event form - Estilos para o Formulário*/
 #event-description {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../img/money.jpg");
     background-repeat: no-repeat;
     background-size: 100%, 100%;
-  background-position: center;
-  display: flex;  
-  justify-content: space-around;
-  align-items: center;
-  color: var(--text-color);    
+    background-position: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);    
 }
 
-#disclaimer h2, #disclaimer h3,
+.event__description-disclaimer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#disclaimer h1, #disclaimer h3,
 #disclaimer .event-description,
 #disclaimer .informacoes, h1 {
     color: var(--primary);
 } 
 
-#disclaimer h2 {
+#disclaimer h1 {
 font-size: 35px;
 margin-left: 400px;
 font-weight: bold;
@@ -58,7 +68,7 @@ padding: 3rem;
 #disclaimer h3{
     font-size: 20px;
     margin-left: 40px;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 #disclaimer .about-event {
@@ -98,23 +108,26 @@ padding: 3rem;
     border-radius: 5%;
 }
 
+.menu {
+  width: 100%;
+  position: relative;
+}
 
 #menu{
+  margin: 25px 5px 20px 0;
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 5px;
-  margin-top: 25px;
- color: #fff;
- background-color: rgb(42, 202, 255);
- border-radius: 1em;
- width: 15%;
- height: 30px;
- text-align: center;
- padding: 5px;
+  color: #fff;
+  background-color: rgb(42, 202, 255);
+  border-radius: 1em;
+  width: 15%;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
 }
 
 #menu:hover{
   color: black;
+  background-color: #fff;
   font-weight: bold;
 }
 
