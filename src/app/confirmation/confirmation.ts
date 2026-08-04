@@ -1,8 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-confirmation',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  template: '<h1>Inscrição concluída</h1>',
+  imports: [RouterLink],
+  templateUrl: './confirmation.html',
+  styleUrl: './confirmation.css',
 })
 export class Confirmation {}

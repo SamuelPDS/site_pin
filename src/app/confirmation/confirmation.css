@@ -1,0 +1,61 @@
+:host {
+  display: block;
+}
+
+.confirmation {
+  background: var(--white);
+  min-height: calc(100svh - 4.75rem);
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+.confirmation__content {
+  margin-inline: auto;
+  max-width: 42rem;
+  text-align: center;
+}
+
+.confirmation__mark {
+  align-items: center;
+  background: color-mix(in srgb, var(--green) 12%, var(--white));
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  color: var(--green);
+  display: inline-flex;
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 700;
+  height: 4rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 4rem;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-family: var(--utility);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-family: var(--display);
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation__message {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto 2rem;
+  max-width: 34rem;
+}
