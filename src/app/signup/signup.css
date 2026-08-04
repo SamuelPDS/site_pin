@@ -1,0 +1,20 @@
+:host { display: block; }
+.signup { background: var(--white); min-height: calc(100svh - 4.75rem); padding-block: clamp(3.5rem, 8vw, 7rem); }
+.signup__grid { align-items: start; display: grid; gap: clamp(3rem, 8vw, 8rem); }
+.eyebrow { color: var(--blue-dark); font-family: var(--utility); font-size: .75rem; font-weight: 500; letter-spacing: .09em; margin: 0 0 1rem; text-transform: uppercase; }
+h1, p { margin-top: 0; }
+h1 { font-family: var(--display); font-size: clamp(2.8rem, 6vw, 5.5rem); letter-spacing: -.055em; line-height: 1.05; margin-bottom: 1.5rem; max-width: 11ch; }
+.signup__intro > p:not(.eyebrow) { font-size: 1.2rem; line-height: 1.5; max-width: 34rem; }
+.signup__notice { border-left: 3px solid var(--yellow); font-size: 1rem !important; margin-top: 2rem; padding-left: 1rem; }
+.signup-form { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-large); display: grid; gap: 1.4rem; padding: clamp(1.5rem, 4vw, 2.5rem); }
+.field { display: grid; gap: .45rem; }
+label { font-family: var(--display); font-size: .88rem; font-weight: 700; }
+input, select { background: var(--white); border: 1px solid #8795a8; border-radius: var(--radius-small); color: var(--ink); min-height: 3rem; padding: .65rem .8rem; width: 100%; }
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched { border-color: var(--danger); border-width: 2px; }
+.field-hint, .field-error { font-size: .92rem; margin: 0; }
+.field-hint { color: #4c5a6d; }
+.field-error { color: var(--danger); font-weight: 600; }
+.signup-form__submit { margin-top: .5rem; width: 100%; }
+.signup-form__submit:disabled { background: #7082a8; border-color: #7082a8; color: var(--white); cursor: wait; opacity: 1; }
+@media (min-width: 56.25rem) { .signup__grid { grid-template-columns: minmax(18rem, .85fr) minmax(26rem, .75fr); } }
+@media (max-width: 40rem) { .signup { min-height: auto; padding-block: 3rem; } .signup-form { border-radius: var(--radius-small); padding: 1.25rem; width: 100%; } }
