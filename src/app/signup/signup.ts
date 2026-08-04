@@ -38,7 +38,9 @@ export class Signup {
     this.signupForm.markAllAsTouched();
     if (this.signupForm.invalid) {
       queueMicrotask(() =>
-        this.formElement().nativeElement.querySelector<HTMLElement>('.ng-invalid')?.focus(),
+        this.formElement()
+          .nativeElement.querySelector<HTMLElement>('.ng-invalid[formControlName]')
+          ?.focus(),
       );
       return;
     }
