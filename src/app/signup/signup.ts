@@ -46,9 +46,15 @@ export class Signup {
     }
 
     this.submitting.set(true);
-    await new Promise<void>((resolve) => setTimeout(resolve, 650));
-    this.signupForm.reset();
-    await this.router.navigate(['/confirmacao']);
-    this.submitting.set(false);
+    this.signupForm.disable();
+
+    try {
+      await new Promise<void>((resolve) => setTimeout(resolve, 650));
+      this.signupForm.reset({ name: '', email: '', phone: '', income: '' });
+      await this.router.navigate(['/confirmacao']);
+    } finally {
+      this.signupForm.enable();
+      this.submitting.set(false);
+    }
   }
 }

@@ -88,7 +88,6 @@ nav {
   top: 100%;
   transform: translateY(-0.5rem);
   transition:
-    opacity 160ms ease,
     transform 160ms ease,
     visibility 160ms ease;
   visibility: hidden;
