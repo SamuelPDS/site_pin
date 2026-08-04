@@ -1,0 +1,38 @@
+<a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+<header class="site-header">
+  <a
+    class="brand"
+    routerLink="/inicio"
+    aria-label="Jovens Empreendedores — início"
+    ><span class="brand-mark" aria-hidden="true">JE</span
+    ><span>Jovens<br />Empreendedores</span></a
+  >
+  <button
+    #menuToggle
+    class="menu-toggle"
+    type="button"
+    aria-controls="site-navigation"
+    [attr.aria-expanded]="menuOpen()"
+    (click)="toggleMenu()"
+  >
+    <span class="sr-only">Abrir ou fechar menu</span
+    ><span aria-hidden="true"></span>
+  </button>
+  <nav
+    id="site-navigation"
+    aria-label="Navegação principal"
+    [class.is-open]="menuOpen()"
+  >
+    <a routerLink="/inicio" fragment="conteudo" (click)="closeMenu()"
+      >Conteúdo</a
+    ><a routerLink="/inicio" fragment="sobre" (click)="closeMenu()"
+      >Quem somos</a
+    ><a routerLink="/inicio" fragment="contato" (click)="closeMenu()">Contato</a
+    ><a
+      class="button button--small"
+      routerLink="/inscricao"
+      (click)="closeMenu()"
+      >Quero aprender</a
+    >
+  </nav>
+</header>
