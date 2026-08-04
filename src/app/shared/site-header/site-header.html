@@ -23,15 +23,15 @@
     aria-label="Navegação principal"
     [class.is-open]="menuOpen()"
   >
-    <a routerLink="/inicio" fragment="conteudo" (click)="closeMenu()"
+    <a routerLink="/inicio" fragment="conteudo" (click)="closeMenu(true)"
       >Conteúdo</a
-    ><a routerLink="/inicio" fragment="sobre" (click)="closeMenu()"
+    ><a routerLink="/inicio" fragment="sobre" (click)="closeMenu(true)"
       >Quem somos</a
-    ><a routerLink="/inicio" fragment="contato" (click)="closeMenu()">Contato</a
+    ><a routerLink="/inicio" fragment="contato" (click)="closeMenu(true)">Contato</a
     ><a
       class="button button--small"
       routerLink="/inscricao"
-      (click)="closeMenu()"
+      (click)="closeMenu(true)"
       >Quero aprender</a
     >
   </nav>

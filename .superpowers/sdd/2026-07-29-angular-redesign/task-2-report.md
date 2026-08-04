@@ -39,3 +39,17 @@ Não foram criados ou executados testes automatizados, conforme a instrução su
 
 - A home ainda é o placeholder da Task 1, portanto os fragments serão os alvos definitivos quando a Task de home adicionar as seções correspondentes.
 - `npm install` reportou 3 vulnerabilidades moderadas já presentes na auditoria de dependências; não foi executado `npm audit fix` para evitar atualização não solicitada.
+
+## Fix round 1
+
+### Mudança
+
+- Causa raiz: os handlers de clique dos links chamavam `closeMenu()` com o padrão `restoreFocus = false`, enquanto o fechamento via Escape chamava `closeMenu(true)`.
+- Corrigi apenas esses handlers para chamar `closeMenu(true)`, reutilizando o caminho de foco já aplicado pelo fechamento com Escape. Assim, a seleção de um link móvel não deixa o elemento ativo dentro de uma navegação que passa a ficar invisível.
+
+### Comandos e saídas
+
+| Comando | Resultado |
+| --- | --- |
+| `npm run build` | concluído com código 0; bundle inicial de 234,93 kB |
+| `git diff --check` | concluído com código 0; nenhum erro de whitespace |
