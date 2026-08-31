@@ -1,0 +1,67 @@
+<section class="signup" aria-labelledby="signup-title">
+  <div class="container signup__grid">
+    <header class="signup__intro">
+      <p class="eyebrow">Inscrição</p>
+      <h1 id="signup-title">Vamos começar sua jornada financeira</h1>
+      <p>
+        Conte um pouco sobre você para conhecer nossos conteúdos gratuitos de
+        educação financeira.
+      </p>
+      <p class="signup__notice">
+        Esta é uma demonstração: seus dados não são enviados nem armazenados.
+      </p>
+    </header>
+
+    <form #signupForm class="signup-form" [formGroup]="this.signupForm" (ngSubmit)="submit()" novalidate>
+      <div class="field">
+        <label for="name">Nome</label>
+        <input id="name" type="text" formControlName="name" autocomplete="name" aria-describedby="name-error" [attr.aria-invalid]="this.signupForm.controls['name'].invalid && this.signupForm.controls['name'].touched" />
+        @if (this.signupForm.controls['name'].touched && this.signupForm.controls['name'].invalid) {
+          <p id="name-error" class="field-error" role="alert">
+            @if (this.signupForm.controls['name'].hasError('required')) { Digite seu nome. } @else { Digite pelo menos 2 caracteres. }
+          </p>
+        }
+      </div>
+
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" formControlName="email" autocomplete="email" aria-describedby="email-error" [attr.aria-invalid]="this.signupForm.controls['email'].invalid && this.signupForm.controls['email'].touched" />
+        @if (this.signupForm.controls['email'].touched && this.signupForm.controls['email'].invalid) {
+          <p id="email-error" class="field-error" role="alert">
+            @if (this.signupForm.controls['email'].hasError('required')) { Digite seu e-mail. } @else { Digite um e-mail válido. }
+          </p>
+        }
+      </div>
+
+      <div class="field">
+        <label for="phone">Telefone</label>
+        <input id="phone" type="tel" formControlName="phone" autocomplete="tel" aria-describedby="phone-hint phone-error" [attr.aria-invalid]="this.signupForm.controls['phone'].invalid && this.signupForm.controls['phone'].touched" />
+        <p id="phone-hint" class="field-hint">Ex.: (31) 99999-9999</p>
+        @if (this.signupForm.controls['phone'].touched && this.signupForm.controls['phone'].invalid) {
+          <p id="phone-error" class="field-error" role="alert">
+            @if (this.signupForm.controls['phone'].hasError('required')) { Digite seu telefone. } @else { Digite um telefone válido. }
+          </p>
+        }
+      </div>
+
+      <div class="field">
+        <label for="income">Faixa de renda mensal</label>
+        <select id="income" formControlName="income" aria-describedby="income-error" [attr.aria-invalid]="this.signupForm.controls['income'].invalid && this.signupForm.controls['income'].touched">
+          <option value="">Selecione</option>
+          <option value="ate-1254">Até R$ 1.254,00</option>
+          <option value="ate-2004">Até R$ 2.004,00</option>
+          <option value="ate-8640">Até R$ 8.640,00</option>
+          <option value="ate-11261">Até R$ 11.261,00</option>
+          <option value="acima-11262">Acima de R$ 11.262,00</option>
+        </select>
+        @if (this.signupForm.controls['income'].touched && this.signupForm.controls['income'].invalid) {
+          <p id="income-error" class="field-error" role="alert">Selecione sua faixa de renda.</p>
+        }
+      </div>
+
+      <button class="button signup-form__submit" type="submit" [disabled]="submitting()">
+        @if (submitting()) { Enviando… } @else { Enviar inscrição }
+      </button>
+    </form>
+  </div>
+</section>

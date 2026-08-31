@@ -1,0 +1,140 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">Conhecimento para escolhas melhores</p>
+      <h1 id="hero-title">Educação financeira para todos</h1>
+      <p class="hero__lead">
+        Conquiste liberdade financeira com nosso conteúdo gratuito sobre
+        organização das finanças.
+      </p>
+      <a class="button" routerLink="/inscricao">Quero aprender</a>
+    </div>
+
+    <div class="journey" role="img" aria-label="Jornada: organizar, proteger e crescer">
+      <span>Organizar</span><span>Proteger</span><span>Crescer</span>
+      <svg aria-hidden="true" viewBox="0 0 520 180">
+        <path
+          class="journey__track"
+          d="M24 142 C150 142 136 92 260 92 S370 38 496 38"
+        />
+        <circle cx="24" cy="142" r="8" />
+        <circle cx="260" cy="92" r="8" />
+        <circle cx="496" cy="38" r="8" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="conteudo" class="learning" aria-labelledby="learning-title">
+  <div class="container">
+    <header class="section-heading">
+      <p class="eyebrow">Conteúdo gratuito</p>
+      <h2 id="learning-title">
+        Um caminho claro para cuidar melhor do seu dinheiro
+      </h2>
+      <p>
+        Aprenda no seu ritmo, partindo das escolhas de hoje até os planos para o
+        futuro.
+      </p>
+    </header>
+
+    <div class="pillars">
+      @for (pillar of pillars; track pillar.title; let step = $index) {
+      <article class="pillar">
+        <div>
+          <p class="step" aria-hidden="true">0{{ step + 1 }}</p>
+          <p class="eyebrow">{{ pillar.eyebrow }}</p>
+          <h3>{{ pillar.title }}</h3>
+          <p class="summary">{{ pillar.summary }}</p>
+        </div>
+        <ul>
+          @for (topic of pillar.topics; track topic) {
+          <li>{{ topic }}</li>
+          }
+        </ul>
+      </article>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="video" aria-labelledby="video-title">
+  <div class="container video__grid">
+    <div>
+      <p class="eyebrow">Comece por aqui</p>
+      <h2 id="video-title">Mas o que é educação financeira?</h2>
+      <p>
+        Assista a esta introdução e entenda como o conhecimento financeiro ajuda
+        nas decisões do dia a dia.
+      </p>
+    </div>
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/HzRK6wTSHHU"
+        title="O que é educação financeira?"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="about" aria-labelledby="about-title">
+  <div class="container about__grid">
+    <div class="about__heading">
+      <p class="eyebrow">Quem somos</p>
+      <h2 id="about-title">Conhecimento financeiro também é inclusão</h2>
+    </div>
+    <div class="about__copy">
+      <p>
+        A Jovens Empreendedores é uma organização sem fins lucrativos que conta
+        com o apoio de ONGs parceiras. Nossa missão é transmitir educação
+        financeira para todos, desenvolvendo habilidades essenciais para
+        escolhas mais conscientes.
+      </p>
+      <p>
+        Buscamos ser referência na disseminação desse conhecimento, com respeito
+        à diversidade e excelência em nossos recursos educacionais. Nossa visão
+        é contribuir para uma sociedade consciente e financeiramente saudável,
+        oferecendo oportunidades iguais de acesso à educação financeira.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="outcomes" aria-labelledby="outcomes-title">
+  <div class="container outcomes__grid">
+    <div>
+      <p class="eyebrow">Na vida prática</p>
+      <h2 id="outcomes-title">O que a educação financeira pode transformar?</h2>
+      <p>
+        Mais clareza no presente, segurança para imprevistos e planos que
+        avançam.
+      </p>
+    </div>
+    <ul>
+      @for (benefit of practicalBenefits; track benefit; let number = $index) {
+      <li><span aria-hidden="true">{{ number + 1 }}</span>{{ benefit }}</li>
+      }
+    </ul>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="container closing__inner">
+    <p class="eyebrow">Seu próximo passo</p>
+    <h2 id="closing-title">Comece uma relação mais leve com o seu dinheiro</h2>
+    <p>Explore nossos conteúdos e avance nessa jornada com a gente.</p>
+    <a class="button" routerLink="/inscricao">Quero começar</a>
+  </div>
+</section>

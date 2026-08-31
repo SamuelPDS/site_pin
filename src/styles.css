@@ -1,0 +1,120 @@
+@import "@fontsource/sora/600.css";
+@import "@fontsource/sora/700.css";
+@import "@fontsource/source-sans-3/400.css";
+@import "@fontsource/source-sans-3/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+:root {
+  --paper: #f5f7fa;
+  --ink: #122033;
+  --blue: #2e5bff;
+  --blue-dark: #1839b8;
+  --green: #1e765e;
+  --yellow: #f2c14e;
+  --line: #dce3ec;
+  --white: #ffffff;
+  --danger: #b42318;
+  --display: "Sora", system-ui, sans-serif;
+  --body: "Source Sans 3", system-ui, sans-serif;
+  --utility: "IBM Plex Mono", ui-monospace, monospace;
+  --content: 74rem;
+  --radius-small: 0.5rem;
+  --radius-large: 1.5rem;
+  --shadow-focus: 0 0 0 0.25rem rgba(46, 91, 255, 0.22);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  margin-inline: auto;
+  max-width: var(--content);
+  padding-inline: 1.25rem;
+}
+.button {
+  align-items: center;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: var(--radius-small);
+  color: var(--white);
+  display: inline-flex;
+  font-family: var(--display);
+  font-size: 0.86rem;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+.button:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+}
+.button--small {
+  min-height: 2.4rem;
+  padding: 0.45rem 0.8rem;
+}
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.skip-link {
+  background: var(--ink);
+  border-radius: 0 0 var(--radius-small) 0;
+  color: var(--white);
+  left: 0;
+  padding: 0.75rem 1rem;
+  position: fixed;
+  top: 0;
+  transform: translateY(-120%);
+  transition: transform 160ms ease;
+  z-index: 10;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+:focus-visible {
+  box-shadow: var(--shadow-focus);
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
